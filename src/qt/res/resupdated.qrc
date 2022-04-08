@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>icons/advanceoptions.png</file>
+    </qresource>
+</RCC>

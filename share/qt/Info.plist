@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+  <key>CFBundleDevelopmentRegion</key>
+  <string>English</string>
+  <key>LSArchitecturePriority</key>
+  <array>
+    <string>x86_64</string>
+  </array>
+  <key>CFBundleExecutable</key>
+  <string>Coon-QT</string>
+	<key>CFBundleIconFile</key>
+  <string>coon.icns</string>
+  <key>CFBundleInfoDictionaryVersion</key>
+  <string>1.3</string>
+  <key>CFBundleName</key>
+  <string>Coon-QT</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+
+	<key>CFBundleGetInfoString</key>
+	<string>Coon-Qt</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleIdentifier</key>
+	<string>co.coon.coon-Qt</string>
+
+  <key>CFBundleURLTypes</key>
+  <array>
+    <dict>
+      <key>CFBundleTypeRole</key>
+      <string>Editor</string>
+      <key>CFBundleURLName</key>
+      <string>co.coon.coonPayment</string>
+      <key>CFBundleURLSchemes</key>
+      <array>
+        <string>coon</string>
+      </array>
+    </dict>
+  </array>
+  <key>LSAppNapIsDisabled</key>
+  <string>True</string>
+  <key>NSPrincipalClass</key>
+  <string>NSApplication</string>
+  <key>NSHighResolutionCapable</key>
+  <string>True</string>
+</dict>
+</plist>
