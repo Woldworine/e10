@@ -84,10 +84,10 @@ public:
 
 
         hashGenesisBlock = genesis.GetHash();
-        printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-        printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-      //  assert(hashGenesisBlock == uint256("0xa5a79d50494e436f44cc7f32461fb4ec34d15ae0408430521e54e28e4aed634a"));
-      //  assert(genesis.hashMerkleRoot == uint256("0xfcca737179141fde50375173da730fe7c05119d9895a8eb3df92344ce1c6880c"));
+      //  printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+      //  printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0xa5c1481120a2630f761492fab55cb6bf7945faad0c7e13bdea3921ccd5dc789a"));
+        assert(genesis.hashMerkleRoot == uint256("0x682e4f761f73ddc5fab3da7f05583f95ccbff05ea8cbeb5cce76221d610d0aa0"));
       
       //  List of nodes:
       //	vSeeds.push_back(CDNSSeedData("sd1", "194.158.201.106"));
@@ -153,7 +153,7 @@ public:
         genesis.nTime    = 1649450500;
         genesis.nNonce = 2216093;
 
-        assert(hashGenesisBlock == uint256("0xa5a79d50494e436f44cc7f32461fb4ec34d15ae0408430521e54e28e4aed634a"));
+        assert(hashGenesisBlock == uint256("0xa5c1481120a2630f761492fab55cb6bf7945faad0c7e13bdea3921ccd5dc789a"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
