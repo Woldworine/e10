@@ -72,22 +72,22 @@ public:
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1649450500, vin, vout, 0);
+        CTransaction txNew(1, 1649459716, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1649450500;
+        genesis.nTime    = 1649459716;
         genesis.nBits    = 0x1e0fffff;
         genesis.nNonce   = 2216093;
 
 
 
         hashGenesisBlock = genesis.GetHash();
-      //  printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
-      //  printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0xa5c1481120a2630f761492fab55cb6bf7945faad0c7e13bdea3921ccd5dc789a"));
-        assert(genesis.hashMerkleRoot == uint256("0x682e4f761f73ddc5fab3da7f05583f95ccbff05ea8cbeb5cce76221d610d0aa0"));
+        //printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
+        //printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
+        assert(hashGenesisBlock == uint256("0x3aa4e495f7a86955a16a655b661551581eec42775991b3c26534b080a1f636b7"));
+        assert(genesis.hashMerkleRoot == uint256("0x7d193e016f8e59a665d59ed3b5d47901c4f5354c998d0f73b623baf0aa26918a"));
       
       //  List of nodes:
       //	vSeeds.push_back(CDNSSeedData("sd1", "194.158.201.106"));
@@ -150,10 +150,10 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = 0x1e0fffff; //504365055 Decimal Number
-        genesis.nTime    = 1649450500;
+        genesis.nTime    = 1649459716;
         genesis.nNonce = 2216093;
 
-        assert(hashGenesisBlock == uint256("0xa5c1481120a2630f761492fab55cb6bf7945faad0c7e13bdea3921ccd5dc789a"));
+        assert(hashGenesisBlock == uint256("0x3aa4e495f7a86955a16a655b661551581eec42775991b3c26534b080a1f636b7"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
