@@ -65,19 +65,19 @@ public:
         //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341);
         //    CTxOut(empty);
         //  vMerkleTree: 12630d16a9;
-        const char* pszTimestamp = "President say: The principles of state economic policy will remain unchanged, people will always be in the spotlights 14/01/2020";
+        const char* pszTimestamp = "President say: You didn’t say the main thing, not one Belarusian soldier is fighting in Ukraine 17/04/2022";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         std::vector<CTxOut> vout;
         vout.resize(1);
         vout[0].SetEmpty();
-        CTransaction txNew(1, 1649459716, vin, vout, 0);
+        CTransaction txNew(1, 1650186914, vin, vout, 0);
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1649459716;
+        genesis.nTime    = 1650186914;
         genesis.nBits    = 0x1e0fffff;
         genesis.nNonce   = 2216093;
 
@@ -86,8 +86,8 @@ public:
         hashGenesisBlock = genesis.GetHash();
         //printf("genesis.GetHash = %s\n", genesis.GetHash().ToString().c_str());
         //printf("merkle = %s\n", genesis.hashMerkleRoot.ToString().c_str());
-        assert(hashGenesisBlock == uint256("0x3aa4e495f7a86955a16a655b661551581eec42775991b3c26534b080a1f636b7"));
-        assert(genesis.hashMerkleRoot == uint256("0x7d193e016f8e59a665d59ed3b5d47901c4f5354c998d0f73b623baf0aa26918a"));
+        assert(hashGenesisBlock == uint256("0x92e7c310c105792c1d29b7b66f4de195624deb82effaf15d3b51977491e2d635"));
+        assert(genesis.hashMerkleRoot == uint256("0x1ad24af7e7530f21cd497449eddd426da79857bbb7055888d60551fd4831f594"));
       
       //  List of nodes:
       //	vSeeds.push_back(CDNSSeedData("sd1", "194.158.201.106"));
@@ -150,10 +150,10 @@ public:
 
         // Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nBits  = 0x1e0fffff; //504365055 Decimal Number
-        genesis.nTime    = 1649459716;
+        genesis.nTime    = 1650186914;
         genesis.nNonce = 2216093;
 
-        assert(hashGenesisBlock == uint256("0x3aa4e495f7a86955a16a655b661551581eec42775991b3c26534b080a1f636b7"));
+        assert(hashGenesisBlock == uint256("0x92e7c310c105792c1d29b7b66f4de195624deb82effaf15d3b51977491e2d635"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
