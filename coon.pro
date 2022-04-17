@@ -320,7 +320,7 @@ HEADERS += src/qt/bitcoingui.h \
     src/sph_simd.h \
     src/sph_types.h \
 	src/txdb-leveldb.h \
-        extendedoptionsmenu.h
+    src/qt/extendedoptionsmenu.h
 SOURCES += src/qt/bitcoin.cpp src/qt/bitcoingui.cpp \
     src/qt/transactiontablemodel.cpp \
     src/qt/addresstablemodel.cpp \
